@@ -1,0 +1,21 @@
+@model CalcularIGV
+<form asp-controller="CalcularIGV" asp-action="MiMetodoExecute">
+
+     <label asp-for="DatosDelProducto" class="control-label"></label>
+     <input asp-for="DatosDelProducto" class="form-control" />
+
+     <label asp-for="Nombre" class="control-label"></label>
+     <input asp-for="Nombre" class="form-control" />
+
+     <label asp-for="Precio" class="control-label"></label>
+     <input asp-for="Precio" class="form-control" />
+
+     <label asp-for="Cantidad" class="control-label"></label>
+     <input asp-for="Cantidad" class="form-control" />
+
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Calcular</button> 
+    </div>              
+</form>
+<h1>@ViewData["Message"]</h1>
